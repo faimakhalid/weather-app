@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <!-- <h1>City Weather 🌦️</h1> -->
+        </header>
+        <div class="city-selector">
+            <label for="cityDropdown">Select City:</label>
+            <select id="cityDropdown" onchange="showWeather()">
+                <option value="" disabled selected>Choose a city</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Peshawar">Peshawar</option>
+            </select>
+        </div>
+        <div class="weather-display" id="weatherDisplay">
+            <p>Select a city to see the weather details.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
